@@ -17,13 +17,13 @@ This is a game I have played with my students with actual playing cards. I thoug
 ## Win State
 - The first to collect ten cards that equal $1.00 wins that round and earns 1 point. 
 - If no one has $1.00 after the deck is depleted, the person closest to $1.00 (without going over) earns 0.5 point.
-- The player with the most points at the end of the last round wins the game. 
+- The player with the most points at the end of the 5 rounds (or when the game is quit) wins the game. 
 
 
 ## Lose State
 - If a player goes over $1.00, they will lose the round.
 - If a player has a lesser total than the other player when the deck is depleted, they will lose the round.
-The player with the lowest score when the game is quit is the loser of the game.
+- The player with the lowest score when the game is over or quit is the loser of the game.
 
 
 ## Multiple rounds to play
@@ -36,10 +36,10 @@ The player with the lowest score when the game is quit is the loser of the game.
 
 
 ## Wireframe
-![Game Open](/wireframe/game-open.png))
-![Game Play](/wireframe/game-play.png))
-![Game Round End](/wireframe/game-round-end.png))
-![Game Over](/wireframe/game-over.png))
+![Game Open](/wireframe/game-open.png)
+![Game Play](/wireframe/game-play.png)
+![Game Round End](/wireframe/game-round-end.png)
+![Game Over](/wireframe/game-over.png)
 
 
 ## Timeline 
