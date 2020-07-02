@@ -6,7 +6,7 @@ This is a game I have played with my students with actual playing cards. I thoug
 - The user will play against the opponent (computer).
 
 
-### Rules of the game
+## Rules of the game
 - The object of this game is to be the first to collect ten cards that exactly equal $1.00.
 - This game is played using a complete deck of cards.
 - In this game, Ace = $0.01, Two = $0.02, Three = $0.03, … Tens = $0.10, Jack = $0.11, Queen = $0.12 and King = $0.13.
