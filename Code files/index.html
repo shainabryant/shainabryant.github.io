@@ -5,9 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Make a Buck</title>
     <link rel="stylesheet" href="style.css">
-    <script></script>
+    <!-- Used Code Pen as a reference for creating a "on load" modal for instructions https://codepen.io/ud-kazi/pen/BaNJzpY -->
+    <script src="make-a-buck.js"></script>
+       <!-- Bootstrap CSS -->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
+       <!-- Button trigger modal -->
+     
+   
+       <!-- Modal -->
+       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog" role="document">
+           <div class="modal-content">
+           <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel" > Game Instructions </h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+               </button>
+           </div>
+           <div class="modal-body">
+             <h3 style="text-align: center;">How to Play "Make A Buck"</h3> 
+               <ul>
+                   <li>The object of this game is to be the first to collect ten cards that exactly equal $1.00.</li> 
+                   <li>This game is played using a complete deck of cards.</li> 
+                   <li>In this game, Ace = $0.01, Two = $0.02, Three = $0.03, … Tens = $0.10, Jack = $0.11, Queen = $0.12 and King = $0.13.</li>
+                   <li>Both players will receive 10 cards.</li>
+                   <li>Player and opponent then take turns drawing from the deck and discarding one card at a time until the deck of cards is depleted or someone collects exactly $1.00.</li>             <li> The first to collect ten cards that equal $1.00 wins that round and earns 1 point. </li>
+   <li>If no one has $1.00 after the deck is depleted, the person closest to $1.00 (without going over) earns 0.5 point.</li>
+   <li>The player with the most points at the end of the 5 rounds wins the game. </li>
+   </ul>
+           </div>
+           <div class="modal-footer">
+               <button type="button" class="btn btn-primary" data-dismiss="modal">Start the Game</button>
+           </div>
+           </div>
+       </div>
+       </div>
+   
+       <!-- Optional JavaScript -->
+       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+       <script>
+          $(document).ready(function(){
+               $('#exampleModal').modal('show');
+           }); 
+       </script>
+
 <!-- container for the game -->
 <div class="game-container">
     <div class="score">Score</div>
@@ -22,25 +68,6 @@
     <div class="opponent-space">Opponent Space</div>
 </div>
 
-<!-- Modal for Opening Instructions -->
-<a href="#openModal">Open Modal</a>
 
-<div id="openModal" class="modalDialog">
-    <div>
-		<a href="#close" title="Close" class="close">X</a>
-		<h2> Instructions</h2>
-        <p> <h3>Rules of the Game</h3>
-            <ul>
-                <li>The object of this game is to be the first to collect ten cards that exactly equal $1.00.</li> 
-                <li>This game is played using a complete deck of cards.</li> 
-                <li>In this game, Ace = $0.01, Two = $0.02, Three = $0.03, … Tens = $0.10, Jack = $0.11, Queen = $0.12 and King = $0.13.</li>
-                <li>Both players will receive 10 cards.</li>
-                <li>Player and opponent then take turns drawing from the deck and discarding one card at a time until the deck of cards is depleted or someone collects exactly $1.00.</li>
-            </ul>
-</p>
-		<p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
-	</div>
-	
-</div>
 </body>
 </html>

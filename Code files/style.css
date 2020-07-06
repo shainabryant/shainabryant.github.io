@@ -10,6 +10,21 @@ dk prp - #26111F
 berry - #8C2E6B */
 
 /* Styling for opening instructions modal box */
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
 .modalDialog:target {
 	opacity:1;
 	pointer-events: auto;
@@ -26,6 +41,8 @@ berry - #8C2E6B */
 	background: -webkit-linear-gradient(#fff, #999);
 	background: -o-linear-gradient(#fff, #999);
 }
+
+/* styling for the game container */
 .game-container {
     display: grid;
     height: 100vh;
